@@ -53,4 +53,9 @@ void loop() {
 //    ultima_troca2 += tempo;
  }  
 
+  if (((tempo < ultima_troca1)&&(tempo < ultima_troca2))&&(ultima_troca2 > 0)) {
+    ultima_troca1 = 0;
+    ultima_troca2 = 0;
+  }
+
 }
